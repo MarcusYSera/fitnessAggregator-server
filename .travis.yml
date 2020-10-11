@@ -1,7 +1,7 @@
 language: node_js
 env:
   global:
-    - CC_TEST_REPORTER_ID=c5c4d108fd65f5b4478eae9bb4cc84c38d00edfee77f6191378dd3c83a723454
+    - CC_TEST_REPORTER_ID=bfad22d1127716571be1f57745ab3075638faa260d1107892963c8be960e6a47
     - CONNECTION_STRING="postgresql://postgres:postgres@localhost:5432/testdb"
 matrix:
   include:
