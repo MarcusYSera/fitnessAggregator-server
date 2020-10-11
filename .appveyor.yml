@@ -13,6 +13,3 @@ before_test:
   - createdb testdb
 services:
   - postgresql101
-env:
-  global:
-    - CONNECTION_STRING=postgresql://postgres:Password12!@localhost:5432/testdb
