@@ -2,7 +2,7 @@ import { expect, server, BASE_URL } from './setup';
 
 describe('Users', () => {
   it('add users', (done) => {
-    const data = { stravaid: 'idforUser', refreshtoken: 'tokenforUser' };
+    const data = { stravaId: 'idforUser', refreshToken: 'tokenforUser' };
     server
       .post(`${BASE_URL}/users`)
       .send(data)
