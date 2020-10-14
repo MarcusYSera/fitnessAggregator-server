@@ -19,15 +19,15 @@ export const createUserTable = `
   DROP TABLE IF EXISTS users;
   CREATE TABLE IF NOT EXISTS users (
     id SERIAL PRIMARY KEY,
-    stravaid VARCHAR DEFAULT '',
+    stravaid INT NOT NULL,
     refreshtoken VARCHAR NOT NULL
   )
 `;
 
 export const insertUsers = `
   INSERT INTO users (stravaid, refreshtoken)
-  VALUES ('stravaidTestInput', 'refreshtokenInput'),
-          ('secondstravaid', 'resfreshTOKENInput')
+  VALUES (123456, 'refreshtokenInput'),
+          (9567865, 'resfreshTOKENInput')
 `;
 
 export const dropUsersTable = 'DROP TABLE users';
